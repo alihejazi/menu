@@ -149,7 +149,7 @@ nav .navbar .links li:hover .sub-menu{
     display: block;
     max-width: 350px;
     width: 100%;
-    background: white;
+    background: rgb(245, 245, 245);
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -179,6 +179,7 @@ nav .navbar .links li:hover .sub-menu{
   }
 nav .navbar .links li{
     display: block;
+    border-bottom: 1px solid #e6e6e6;
   }
 nav .navbar .links li .sub-menu{
   position: relative;
