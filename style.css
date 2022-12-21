@@ -132,6 +132,9 @@ nav .navbar .links li:hover .js-sub-menu{
 .display-sub-menu {
   display: block !important;
 }
+.transform-90 {
+  transform: rotate(90deg) !important;
+}
 .transform-180 {
   transform: rotate(180deg) !important;
 }

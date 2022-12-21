@@ -1,16 +1,5 @@
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
-// let searchBox = document.querySelector(".search-box .bx-search");
-// let searchBoxCancel = document.querySelector(".search-box .bx-x");
-
-// searchBox.addEventListener("click", ()=>{
-//   navbar.classList.toggle("showInput");
-//   if(navbar.classList.contains("showInput")){
-//     searchBox.classList.replace("bx-search" ,"bx-x");
-//   }else {
-//     searchBox.classList.replace("bx-x" ,"bx-search");
-//   }
-// });
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
@@ -25,14 +14,15 @@ navLinks.style.left = "-100%";
 
 
 // sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".match-funding-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show-match-funding-sub-menu");
-}
-let moreArrow = document.querySelector(".match-funding-opportunities-sub-sub-menu-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show-match-funding-opportunities-sub-sub-menu");
-}
+// let htmlcssArrow = document.querySelector(".match-funding-arrow");
+// htmlcssArrow.onclick = function() {
+//  navLinks.classList.toggle("show-match-funding-sub-menu");
+// }
+// let moreArrow = document.querySelector(".match-funding-opportunities-sub-sub-menu-arrow");
+// moreArrow.onclick = function() {
+//  navLinks.classList.toggle("show-match-funding-opportunities-sub-sub-menu");
+// }
+
 // let aboutUsArrow = document.querySelector(".about-us-arrow");
 // aboutUsArrow.onclick = function() {
 //  navLinks.classList.toggle("show-about-us-sub-menu");
@@ -44,18 +34,20 @@ moreArrow.onclick = function() {
 //     subMenu.classList.toggle('display-sub-menu');    
 // }
 
-
-// subMenuArrowClicked = (arrow) => {
-//     arrow.classList.toggle('transform-180');
-//     const subMenu = arrow.parentNode.querySelector('.sub-menu');
-//     subMenu.classList.toggle('display-sub-menu');    
-// }
-
 const subMenuArrows = document.querySelectorAll('.sub-menu-arrow');
 subMenuArrows.forEach(subMenuArrow => {
     subMenuArrow.onclick = () => {
         subMenuArrow.classList.toggle('transform-180');
         const subMenu = subMenuArrow.parentNode.querySelector('.sub-menu');
         subMenu.classList.toggle('display-sub-menu');    
+    }
+})
+
+const subSubMenuArrows = document.querySelectorAll('.sub-sub-menu-arrow');
+subSubMenuArrows.forEach(subSubMenuArrow => {
+    subSubMenuArrow.onclick = () => {
+        subSubMenuArrow.classList.toggle('transform-90');
+        const subSubMenu = subSubMenuArrow.parentNode.parentNode.querySelector('.sub-sub-menu');
+        subSubMenu.classList.toggle('display-sub-menu');    
     }
 })
