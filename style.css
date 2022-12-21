@@ -65,11 +65,11 @@ nav .navbar .links li a{
   font-size: 15px;
   font-weight: 500;
 }
-.links li:hover .match-funding-arrow,
+/* .links li:hover .match-funding-arrow,
 .links li:hover .about-us-arrow,
 .links li:hover .resources-arrow {
   transform: rotate(180deg);
-  }
+  } */
 
 nav .navbar .links li .arrow{
   /* background: red; */
@@ -106,13 +106,10 @@ nav .navbar .links li:hover .js-sub-menu{
   font-size: 15px;
   font-weight: 500;
 }
-.navbar .links li .sub-menu .match-funding-opportunities-sub-sub-menu-arrow{
+/* .navbar .links li .sub-menu .sub-sub-menu-arrow{
   line-height: 40px;
-}
-.navbar .links li .htmlCss-more-sub-menu{
-  /* line-height: 40px; */
-}
-.navbar .links li .sub-menu .more-sub-menu{
+} */
+.navbar .links li .sub-menu .sub-sub-menu{
   position: absolute;
   top: 0;
   left: 100%;
@@ -120,7 +117,7 @@ nav .navbar .links li:hover .js-sub-menu{
   z-index: 1;
   display: none;
 }
-.links li .sub-menu .more:hover .more-sub-menu{
+.links li .sub-menu .more:hover .sub-sub-menu{
   display: block;
 }
 .navbar .nav-links .sidebar-logo{
@@ -204,22 +201,22 @@ nav .navbar .links li .sub-menu li{
   border-bottom: none;
 
 }
-.navbar .links li .sub-menu .more-sub-menu{
+.navbar .links li .sub-menu .sub-sub-menu{
   display: none;
   position: relative;
   left: 0;
 }
-.navbar .links li .sub-menu .more-sub-menu li{
+.navbar .links li .sub-menu .sub-sub-menu li{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.links li:hover .match-funding-arrow,
+/* .links li:hover .match-funding-arrow,
 .links li:hover .about-us-arrow,
 .links li:hover .resources-arrow {
   transform: rotate(0deg);
-  }
-  .navbar .links li .sub-menu .more-sub-menu{
+  } */
+  .navbar .links li .sub-menu .sub-sub-menu{
     display: none;
   }
   .navbar .links li .sub-menu .more span{
@@ -229,17 +226,17 @@ nav .navbar .links li .sub-menu li{
     /* justify-content: space-between; */
   }
 
-  .links li .sub-menu .more:hover .more-sub-menu{
+  .links li .sub-menu .more:hover .sub-sub-menu{
     display: none;
   }
   nav .navbar .links li:hover .htmlCss-sub-menu,
   nav .navbar .links li:hover .js-sub-menu{
     display: none;
   }
-.navbar .nav-links.show-match-funding-sub-menu .links .htmlCss-sub-menu,
+/* .navbar .nav-links.show-match-funding-sub-menu .links .htmlCss-sub-menu,
   .navbar .nav-links.show-about-us-sub-menu .links .js-sub-menu,
   .navbar .nav-links.show-resources-sub-menu .links .js-sub-menu,
-  .navbar .nav-links.show-match-funding-opportunities-sub-sub-menu .links .more .more-sub-menu{
+  .navbar .nav-links.show-match-funding-opportunities-sub-sub-menu .links .more .sub-sub-menu{
       display: block;
     }
     .navbar .nav-links.show-match-funding-sub-menu .links .match-funding-arrow,
@@ -250,7 +247,7 @@ nav .navbar .links li .sub-menu li{
     .navbar .nav-links.show-match-funding-opportunities-sub-sub-menu .links .match-funding-opportunities-sub-sub-menu-arrow{
       transform: rotate(90deg);
     }
-}
+} */
 @media (max-width:370px){
   nav .navbar .nav-links{
   max-width: 100%;
