@@ -33,11 +33,29 @@ let moreArrow = document.querySelector(".match-funding-opportunities-sub-sub-men
 moreArrow.onclick = function() {
  navLinks.classList.toggle("show-match-funding-opportunities-sub-sub-menu");
 }
-let aboutUsArrow = document.querySelector(".about-us-arrow");
-aboutUsArrow.onclick = function() {
- navLinks.classList.toggle("show-about-us-sub-menu");
-}
-// let resourcesArrow = document.querySelector(".resources-arrow");
-// resourcesArrow.onclick = function() {
-//  navLinks.classList.toggle("show-resources-sub-menu");
+// let aboutUsArrow = document.querySelector(".about-us-arrow");
+// aboutUsArrow.onclick = function() {
+//  navLinks.classList.toggle("show-about-us-sub-menu");
 // }
+// let resourcesArrow = document.querySelector(".sub-menu-arrow");
+// resourcesArrow.onclick = function() {
+//     resourcesArrow.classList.toggle('transform-180');
+//     const subMenu = resourcesArrow.parentNode.querySelector('.sub-menu');
+//     subMenu.classList.toggle('display-sub-menu');    
+// }
+
+
+// subMenuArrowClicked = (arrow) => {
+//     arrow.classList.toggle('transform-180');
+//     const subMenu = arrow.parentNode.querySelector('.sub-menu');
+//     subMenu.classList.toggle('display-sub-menu');    
+// }
+
+const subMenuArrows = document.querySelectorAll('.sub-menu-arrow');
+subMenuArrows.forEach(subMenuArrow => {
+    subMenuArrow.onclick = () => {
+        subMenuArrow.classList.toggle('transform-180');
+        const subMenu = subMenuArrow.parentNode.querySelector('.sub-menu');
+        subMenu.classList.toggle('display-sub-menu');    
+    }
+})

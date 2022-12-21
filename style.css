@@ -129,6 +129,12 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
+.display-sub-menu {
+  display: block !important;
+}
+.transform-180 {
+  transform: rotate(180deg) !important;
+}
 @media (max-width: 1200px) {
   .navbar .logo {
     min-width: 120px;
@@ -206,7 +212,7 @@ nav .navbar .links li .sub-menu li{
   justify-content: space-between;
 }
 .links li:hover .match-funding-arrow,
-.links li:hover .about-us-arrow
+.links li:hover .about-us-arrow,
 .links li:hover .resources-arrow {
   transform: rotate(0deg);
   }
