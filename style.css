@@ -65,8 +65,9 @@ nav .navbar .links li a{
   font-size: 15px;
   font-weight: 500;
 }
-.links li:hover .htmlcss-arrow,
-.links li:hover .js-arrow{
+.links li:hover .match-funding-arrow,
+.links li:hover .about-us-arrow,
+.links li:hover .resources-arrow {
   transform: rotate(180deg);
   }
 
@@ -105,7 +106,7 @@ nav .navbar .links li:hover .js-sub-menu{
   font-size: 15px;
   font-weight: 500;
 }
-.navbar .links li .sub-menu .more-arrow{
+.navbar .links li .sub-menu .match-funding-opportunities-sub-sub-menu-arrow{
   line-height: 40px;
 }
 .navbar .links li .htmlCss-more-sub-menu{
@@ -204,8 +205,9 @@ nav .navbar .links li .sub-menu li{
   align-items: center;
   justify-content: space-between;
 }
-.links li:hover .htmlcss-arrow,
-.links li:hover .js-arrow{
+.links li:hover .match-funding-arrow,
+.links li:hover .about-us-arrow
+.links li:hover .resources-arrow {
   transform: rotate(0deg);
   }
   .navbar .links li .sub-menu .more-sub-menu{
@@ -225,16 +227,18 @@ nav .navbar .links li .sub-menu li{
   nav .navbar .links li:hover .js-sub-menu{
     display: none;
   }
-.navbar .nav-links.show1 .links .htmlCss-sub-menu,
-  .navbar .nav-links.show3 .links .js-sub-menu,
-  .navbar .nav-links.show2 .links .more .more-sub-menu{
+.navbar .nav-links.show-match-funding-sub-menu .links .htmlCss-sub-menu,
+  .navbar .nav-links.show-about-us-sub-menu .links .js-sub-menu,
+  .navbar .nav-links.show-resources-sub-menu .links .js-sub-menu,
+  .navbar .nav-links.show-match-funding-opportunities-sub-sub-menu .links .more .more-sub-menu{
       display: block;
     }
-    .navbar .nav-links.show1 .links .htmlcss-arrow,
-    .navbar .nav-links.show3 .links .js-arrow{
+    .navbar .nav-links.show-match-funding-sub-menu .links .match-funding-arrow,
+    .navbar .nav-links.show-about-us-sub-menu .links .about-us-arrow,
+    .navbar .nav-links.show-resources-sub-menu .links .resources-arrow{
         transform: rotate(180deg);
 }
-    .navbar .nav-links.show2 .links .more-arrow{
+    .navbar .nav-links.show-match-funding-opportunities-sub-sub-menu .links .match-funding-opportunities-sub-sub-menu-arrow{
       transform: rotate(90deg);
     }
 }

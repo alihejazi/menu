@@ -25,15 +25,19 @@ navLinks.style.left = "-100%";
 
 
 // sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+let htmlcssArrow = document.querySelector(".match-funding-arrow");
 htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
+ navLinks.classList.toggle("show-match-funding-sub-menu");
 }
-let moreArrow = document.querySelector(".more-arrow");
+let moreArrow = document.querySelector(".match-funding-opportunities-sub-sub-menu-arrow");
 moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
+ navLinks.classList.toggle("show-match-funding-opportunities-sub-sub-menu");
 }
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
+let aboutUsArrow = document.querySelector(".about-us-arrow");
+aboutUsArrow.onclick = function() {
+ navLinks.classList.toggle("show-about-us-sub-menu");
 }
+// let resourcesArrow = document.querySelector(".resources-arrow");
+// resourcesArrow.onclick = function() {
+//  navLinks.classList.toggle("show-resources-sub-menu");
+// }
